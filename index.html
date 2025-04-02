@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric M Shonko - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+    <style>
+        
+       
+    </style>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <h1>Welcome to My Website</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Eric M Shonko</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul id="nav-list">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#work">Work With Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="image-slider">
+                <img src="images/image1.jpg" alt="Eric Shonko" class="slider-img">
+            </div>
+            <div class="about-text">
+                <h2>Hi, I'm <span>Eric Shonko</span></h2>
+                <p>I am a passionate and skilled website developer with expertise in creating responsive and dynamic web solutions. As a cybersecurity enthusiast, I stay updated on the latest security practices to ensure data protection and system integrity. My knowledge in networking fundamentals allows me to configure and troubleshoot network systems efficiently. Additionally, I am proficient in Microsoft Excel, leveraging its powerful features for data analysis and automation. With a strong command of Python, I serve as a dedicated tutor at Studypool, helping learners master programming concepts. Beyond that, I am also a creative graphics designer, bringing visual ideas to life through compelling digital designs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Work Section -->
+    <section id="my-work" class="projects-container">
+        <h2 class="projects-title">My Work</h2>
+        <div class="project-boxes">
+            <div class="project-box" style="background-image: url('images/python-bg.jpeg')">
+                <div class="project-content">
+                    <h3>Python Projects</h3>
+                    <button class="project-btn" onclick="showProjects('python')">View Projects</button>
+                    <div id="python-projects" class="project-details">
+                        <!-- will be adding more projects here as i continue -->
+                        <p>Python projects coming soon!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-box" style="background-image: url('images/network-bg.jpeg')">
+                <div class="project-content">
+                    <h3>Networking Projects</h3>
+                    <button class="project-btn" onclick="showProjects('network')">View Projects</button>
+                    <div id="network-projects" class="project-details">
+                        <p>Networking projects coming soon!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-box" style="background-image: url('images/webdev-bg.jpeg')">
+                <div class="project-content">
+                    <h3>Web Development</h3>
+                    <button class="project-btn" onclick="showProjects('webdev')">View Projects</button>
+                    <div id="webdev-projects" class="project-details">
+                        <p>Web development projects coming soon!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-box" style="background-image: url('images/graphics-bg.jpeg')">
+                <div class="project-content">
+                    <h3>Graphics Design</h3>
+                    <button class="project-btn" onclick="showProjects('design')">View Projects</button>
+                    <div id="design-projects" class="project-details">
+                        <p>Design projects coming soon!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-box" style="background-image: url('images/cyber-bg.jpeg')">
+                <div class="project-content">
+                    <h3>Cyber Security</h3>
+                    <button class="project-btn" onclick="showProjects('cyber')">View Projects</button>
+                    <div id="cyber-projects" class="project-details">
+                        <p>Cyber security projects coming soon!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work With Me Section -->
+    <section id="work">
+        <h2><button>Work With Me</button></h2>
+        <p>Let's collaborate on amazing projects. Reach out to discuss how we can work together.</p>
+    </section>
+
+    <!-- Social Media Links -->
+    <footer id="contact">
+        <div class="social-icons">
+            <a href="#" class="whatsapp">WhatsApp</a>
+            <a href="#" class="facebook">Facebook</a>
+            <a href="#" class="tiktok">TikTok</a>
+            <a href="#" class="linkedin">LinkedIn</a>
+            <a href="#" class="email">Email</a>
+        </div>
+    </footer>
+
+    <script>
+        
+    </script>
+</body>
+</html>
