@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Eric Moitalel - Website Developer, and a graphics designer. Portfolio showcasing web development,python and design projects.">
+    <meta name="keywords" content="Eric Moitalel, web developer, python programmer, graphic design, portfolio">
+    <meta name="author" content="Eric M Shonko">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Eric Moitalel - Professional Portfolio">
+    <meta property="og:description" content="Website Developer, and Graphics Designer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/images/social-preview.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <title>Eric Moitalel Shonko | Web Developer & graphics designer</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome with reduced icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Deferred JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" aria-hidden="true">
+        <div class="splash-content">
+            <h1>Welcome to My Portfolio</h1>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo" aria-label="Eric M Shonko">Eric M Shonko</div>
+            <button class="menu-toggle" id="mobile-menu" aria-expanded="false" aria-label="Toggle menu">
+                <span class="menu-icon" aria-hidden="true"></span>
+            </button>
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-item"><a href="#about" class="nav-link" aria-current="page">About Me</a></li>
+                <li class="nav-item"><a href="#my-work" class="nav-link">My Work</a></li>
+                <li class="nav-item"><a href="#work" class="nav-link">Work With Me</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- About Me Section -->
+        <section id="about" class="section about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title visually-hidden">About Eric Shonko</h2>
+                <div class="about-container">
+                    <figure class="image-slider">
+                        <img src="images/image1.jpg" alt="Eric Shonko - Professional portrait" class="slider-img" loading="lazy" width="450" height="500">
+                        <!-- Additional images will be loaded by JavaScript -->
+                    </figure>
+                    <article class="about-text">
+                        <h2 class="about-title">Hi, I'm <span class="highlight">Eric Shonko</span></h2>
+                        <p class="about-description">I am a passionate and skilled website developer with expertise in creating responsive and dynamic web solutions. As a cybersecurity enthusiast, I stay updated on the latest security practices to ensure data protection and system integrity.I am proficient in Microsoft Excel, leveraging its powerful features for data analysis and automation. With a strong command of Python, I serve as a dedicated tutor at Studypool, helping learners master programming concepts. Beyond that, I am also a creative graphics designer, bringing visual ideas to life through compelling digital designs.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Work Section -->
+        <section id="my-work" class="section projects-section" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" class="section-title">My Work</h2>
+                <div class="carousel-container">
+                    <button class="carousel-arrow left-arrow" aria-label="Previous project">
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <div class="project-boxes">
+                        <article class="project-box" style="background-image: url('images/python-bg.jpeg')" aria-labelledby="python-heading" data-category="python">
+                            <div class="project-content">
+                                <h3 id="python-heading" class="project-title">Python Projects</h3>
+                                <button class="project-btn" aria-expanded="false" aria-controls="python-projects">View Projects</button>
+                                <div id="python-projects" class="project-details" hidden>
+                                    <p>Python projects coming soon!</p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="project-box" style="background-image: url('images/webdev-bg.jpeg')" aria-labelledby="webdev-heading" data-category="webdev">
+                            <div class="project-content">
+                                <h3 id="webdev-heading" class="project-title">Web Development</h3>
+                                <button class="project-btn" aria-expanded="false" aria-controls="webdev-projects">View Projects</button>
+                                <div id="webdev-projects" class="project-details" hidden>
+                                    <p>Web development projects coming soon!</p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="project-box" style="background-image: url('images/graphics-bg.jpeg')" aria-labelledby="design-heading" data-category="design">
+                            <div class="project-content">
+                                <h3 id="design-heading" class="project-title">Graphics Design</h3>
+                                <button class="project-btn" aria-expanded="false" aria-controls="design-projects">View Projects</button>
+                                <div id="design-projects" class="project-details" hidden>
+                                    <p>Design projects coming soon!</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <button class="carousel-arrow right-arrow" aria-label="Next project">
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work With Me Section -->
+        <section id="work" class="section work-section" aria-labelledby="work-heading">
+            <div class="container">
+                <h2 id="work-heading" class="section-title">Work With Me</h2>
+                <p class="work-description">Let's collaborate on amazing projects. Reach out to discuss how we can work together.</p>
+                <div class="contact-options">
+                    <a href="#contact" class="cta-button" aria-label="Jump to contact section">Get in Touch</a>
+                    <span class="contact-or">or</span>
+                    <a href="mailto:moitalel.dev@gmail.com" class="cta-button email-button" aria-label="Send email to Eric Shonko">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Email Me
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with Contact Info -->
+    <footer id="contact" class="footer" aria-labelledby="contact-heading">
+        <div class="container">
+            <h2 id="contact-heading" class="visually-hidden">Contact Information</h2>
+            <div class="social-links">
+                <a href="https://wa.me/+254745922797" class="social-link whatsapp" aria-label="Contact via WhatsApp" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://facebook.com/Eric M Shonko" class="social-link facebook" aria-label="Connect on Facebook" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://tiktok.com/@eric_m_shonko" class="social-link tiktok" aria-label="Follow on TikTok" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-tiktok" aria-hidden="true"></i>
+                    <span>TikTok</span>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" class="social-link linkedin" aria-label="Connect on LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:moitalel.dev@gmail.com" class="social-link email" aria-label="Send email">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Eric M Shonko. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
